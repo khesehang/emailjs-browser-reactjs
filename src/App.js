@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
 import './App.css';
 import ChatBot from './ChatBot';
+import SimpleChatbot from './SimpleChatbot';
 
 function App() {
   const form = useRef()
@@ -31,6 +32,7 @@ function App() {
         <button type='submit' className='btn' value='send' >Submit</button>
       </form>
       <ChatBot />
+      <SimpleChatbot />
     </div>
   );
 }
