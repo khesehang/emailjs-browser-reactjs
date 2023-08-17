@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
 import './App.css';
-import ChatBot from './ChatBot';
-import SimpleChatbot from './SimpleChatbot';
+import ChatBot from './chatbox/ChatBot';
+import SimpleChatbot from './chatbox/SimpleChatbot';
+import Dialogflow from './chatbox/Dialogflow';
 
 function App() {
   const form = useRef()
@@ -33,6 +34,7 @@ function App() {
       </form>
       <ChatBot />
       <SimpleChatbot />
+      <Dialogflow />
     </div>
   );
 }
